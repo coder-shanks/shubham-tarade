@@ -6,24 +6,28 @@ import { Experience } from "@/components/portfolio/Experience"
 import { ScrollToTop } from "@/components/portfolio/ScrollToTop"
 import { useScrollToHash } from "@/hooks/useScrollToHash"
 import { EasterEggManager } from "@/components/easter-eggs/EasterEggManager"
+import { Toaster } from "@/components/ui/sonner"
 
 export function App() {
   useScrollToHash()
 
   return (
-    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
-      <EasterEggManager />
-      <div>
-        <Nav />
-        <main>
-          <Hero />
-          <Summary />
-          <Skills />
-          <Experience />
-        </main>
+    <>
+      <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+        <EasterEggManager />
+        <div>
+          <Nav />
+          <main>
+            <Hero />
+            <Summary />
+            <Skills />
+            <Experience />
+          </main>
+        </div>
+        <ScrollToTop />
       </div>
-      <ScrollToTop />
-    </div>
+      <Toaster />
+    </>
   )
 }
 
