@@ -77,10 +77,10 @@ export function Hero() {
           <span className="font-mono text-sm text-muted-foreground ml-2 select-none">
             shubham@portfolio — zsh
           </span>
-          <span className="ml-auto inline-flex items-center gap-1.5 rounded-full border border-primary/40 bg-primary/10 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-[0.12em] text-primary">
+          <span className="ml-auto inline-flex items-center gap-1.5 rounded-full border border-green-500/40 bg-green-500/10 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-[0.12em] text-green-500">
             <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary/70" />
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500/70" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500" />
             </span>
             Open to work
           </span>
