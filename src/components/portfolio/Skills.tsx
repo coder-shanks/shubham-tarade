@@ -34,6 +34,7 @@ const TECH_ICONS: Record<string, React.ComponentType<{ className?: string }>> = 
   "REST APIs": FaServer,
   "Material UI": FaPalette,
   "Tailwind CSS": FaPalette,
+  "Shadcn/ui": FaPalette,
   "Chakra UI": FaPalette,
   Bootstrap: FaBootstrap,
   "Semantic UI": FaPalette,
@@ -92,7 +93,7 @@ export function Skills() {
       <div className="mb-6">
         <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">Core Skills</h2>
         <p className="text-base text-muted-foreground mt-2 max-w-3xl">
-          Proficient across modern frontend frameworks, backend technologies, testing, and cloud infrastructure.
+          Proficient across modern frontend frameworks, backend technologies, testing and cloud infrastructure.
         </p>
       </div>
 

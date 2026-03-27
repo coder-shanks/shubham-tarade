@@ -7,7 +7,7 @@ export function Summary() {
       <div className="mb-8">
         <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">Summary</h2>
         <p className="text-base text-muted-foreground mt-2 max-w-3xl">
-          A concise overview of experience, impact, and technical focus.
+          A concise overview of experience, impact and technical focus.
         </p>
       </div>
 

@@ -81,7 +81,7 @@ export function Experience() {
       <div className="mb-8">
         <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">Experience</h2>
         <p className="text-base text-muted-foreground mt-2 max-w-3xl">
-          Roles, outcomes, and recognition across full-stack product development.
+          Roles, outcomes and recognition across full-stack product development.
         </p>
       </div>
 

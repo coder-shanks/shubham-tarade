@@ -1,9 +1,10 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { motion } from "motion/react"
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { Button } from "@/components/ui/button"
 import { useTypewriter } from "@/hooks/useTypewriter"
 import { resume } from "@/lib/resume"
+import { ParticleEffect } from "@/components/easter-eggs/ParticleEffect"
 
 const BOOT_LINES = [
   { text: "8+ years across frontend, backend, testing and CI/CD." },
@@ -31,12 +32,30 @@ export function Hero() {
   const email = resume.contact.email
   const [bootDone, setBootDone] = useState(false)
   const [copied, setCopied] = useState(false)
+  const [nameClickCount, setNameClickCount] = useState(0)
+  const [countPopKey, setCountPopKey] = useState(0)
+  const [particleBurstKey, setParticleBurstKey] = useState(0)
+  const [particlePos, setParticlePos] = useState<{ x: number; y: number } | null>(null)
+  const nameRef = useRef<HTMLHeadingElement>(null)
   const { displayed, done } = useTypewriter(bootDone ? resume.profile.title : "", 50, 200)
 
   useEffect(() => {
     const timer = setTimeout(() => setBootDone(true), 1600)
     return () => clearTimeout(timer)
   }, [])
+
+  function handleNameClick(e: React.MouseEvent<HTMLHeadingElement>) {
+    setNameClickCount((prev) => prev + 1)
+    setCountPopKey((prev) => prev + 1)
+    setParticleBurstKey((prev) => prev + 1)
+    const rect = nameRef.current?.getBoundingClientRect()
+    if (rect) {
+      // Spawn particles from the bottom-right of the name.
+      setParticlePos({ x: rect.right + 6, y: rect.bottom + 6 })
+    } else {
+      setParticlePos({ x: e.clientX, y: e.clientY })
+    }
+  }
 
   function copyEmail() {
     navigator.clipboard.writeText(email).catch(() => { })
@@ -47,7 +66,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen flex flex-col justify-center items-center px-6 max-w-5xl mx-auto pt-16"
+      className="min-h-screen flex flex-col justify-center items-center px-6 max-w-5xl mx-auto pt-16 relative"
     >
       <div className="border border-border rounded-lg overflow-hidden w-full">
         {/* Titlebar */}
@@ -102,10 +121,24 @@ export function Hero() {
             >
               <div>
                 <h1
-                  className="text-6xl sm:text-7xl font-bold tracking-tight leading-none"
+                  ref={nameRef}
+                  className="text-6xl sm:text-7xl font-bold tracking-tight leading-none cursor-pointer hover:opacity-80 transition-opacity relative"
                   style={{ color: "var(--cli-orange)" }}
+                  onClick={handleNameClick}
+                  title={nameClickCount > 0 ? `Clicks: ${nameClickCount}` : "Click me!"}
                 >
                   {resume.profile.name}
+                  {nameClickCount > 0 && (
+                    <motion.span
+                      key={countPopKey}
+                      className="absolute -top-8 -right-8 text-sm font-mono text-primary"
+                      initial={{ opacity: 1, scale: 1 }}
+                      animate={{ opacity: 0, scale: 1.5 }}
+                      transition={{ duration: 1 }}
+                    >
+                      +{nameClickCount}
+                    </motion.span>
+                  )}
                 </h1>
                 <div className="flex items-center mt-4 text-3xl sm:text-4xl text-foreground/75 font-medium">
                   <span>{displayed}</span>
@@ -166,6 +199,7 @@ export function Hero() {
           )}
         </div>
       </div>
+      {particlePos && <ParticleEffect x={particlePos.x} y={particlePos.y} burstKey={particleBurstKey} />}
     </section>
   )
 }
