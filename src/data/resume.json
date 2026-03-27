@@ -1,0 +1,162 @@
+{
+  "profile": {
+    "name": "Shubham Tarade",
+    "title": "Full Stack Developer"
+  },
+  "contact": {
+    "email": "sgstarade@gmail.com"
+  },
+  "summary": [
+    "8+ years across the full stack — database infrastructure, test automation, and enterprise frontend engineering.",
+    "Self-driven career pivot: from systems-level work to leading frontend architecture at scale, through deliberate upskilling.",
+    "Shipped platforms serving 100,000+ users and contributed to products that achieved 15x revenue growth.",
+    "Owns the full delivery lifecycle — from architecture decisions and security compliance to team mentorship and hands-on implementation."
+  ],
+  "highlights": [
+    {
+      "value": "Growth Mindset",
+      "label": "Always learning, always shipping"
+    },
+    {
+      "value": "Adaptability",
+      "label": "From SQL servers to micro-frontends"
+    },
+    {
+      "value": "Ownership",
+      "label": "Cares what ships, not just what's merged"
+    },
+    {
+      "value": "Leadership",
+      "label": "Leaves teams better than he found them"
+    },
+    {
+      "value": "Communication",
+      "label": "Speaks both tech and human"
+    },
+    {
+      "value": "Curiosity",
+      "label": "AI-first before it was a talking point"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Frontend",
+      "technologies": [
+        "ReactJS",
+        "Next.js",
+        "Angular",
+        "TypeScript",
+        "JavaScript"
+      ]
+    },
+    {
+      "category": "Backend",
+      "technologies": ["Express.js", "GraphQL", "C# (.NET Core)", "REST APIs"]
+    },
+    {
+      "category": "UI & Styling",
+      "technologies": [
+        "Material UI",
+        "Tailwind CSS",
+        "Chakra UI",
+        "Bootstrap",
+        "Semantic UI"
+      ]
+    },
+    {
+      "category": "Mobile",
+      "technologies": ["Ionic", "React Native"]
+    },
+    {
+      "category": "Testing",
+      "technologies": ["Jest", "Cypress", "NUnit", "SpecFlow", "ReportPortal"]
+    },
+    {
+      "category": "DevOps & CI/CD",
+      "technologies": ["GitHub Actions", "GitLab CI", "Jenkins", "UCD"]
+    },
+    {
+      "category": "Cloud",
+      "technologies": ["GCP", "AWS"]
+    },
+    {
+      "category": "Databases",
+      "technologies": ["PostgreSQL", "Microsoft SQL Server"]
+    }
+  ],
+  "experience": [
+    {
+      "title": "Senior Full Stack Developer",
+      "company": "Globant",
+      "period": "May 2022 - Present",
+      "current": true,
+      "bullets": [
+        "Led frontend architecture and delivery for a micro-frontend platform now serving 100,000+ enterprise users globally, enabling scalable app onboarding and seamless cross-team development.",
+        "Delivered four mission-critical features - Workspace Management, User Access Management, Data Ingress, and Infrastructure Health Integration - supporting fully automated infrastructure provisioning and reducing DevOps overhead by ~40%.",
+        "Drove security and compliance readiness in under one week, resolving 150+ static analysis issues, all open-source vulnerabilities, and penetration testing findings to meet enterprise review deadlines.",
+        "Architected a scalable user analytics solution across the micro-frontend ecosystem, enabling real-time behavioural insights and data-driven product decisions.",
+        "Designed and rolled out a centralised Service Registry, reducing onboarding friction and enabling controlled access management across product teams.",
+        "Delivered platform training to 300+ organisation members, scaling knowledge and accelerating adoption enterprise-wide.",
+        "Mentored frontend and backend engineers through architecture walkthroughs, design reviews, and ongoing technical guidance - improving team velocity and reducing key-person dependencies.",
+        "Proactively up-skilled in Next.js and Express.js, contributing to API development and backend discussions."
+      ],
+      "achievements": [
+        {
+          "count": "3x",
+          "title": "Spot Awards",
+          "description": "For driving product from MVP to market-ready stage within a year"
+        }
+      ]
+    },
+    {
+      "title": "Frontend Developer",
+      "company": "RedBrick AI (YC W22)",
+      "period": "August 2021 - May 2022",
+      "current": false,
+      "bullets": [
+        "Drove the entire UI development of a rapidly evolving product as the primary frontend engineer, directly contributing to 15x revenue growth within 4 months through fast, high-quality feature delivery.",
+        "Established expertise in React (TypeScript) and GraphQL, becoming the go-to resource for frontend architecture and implementation decisions.",
+        "Collaborated with the UX team on a weekly basis, influencing design decisions and ensuring seamless translation of designs into production-ready interfaces.",
+        "Built and extended a robust library of reusable UI components, improving development speed and consistency across the product."
+      ]
+    },
+    {
+      "title": "Software Developer",
+      "company": "Siemens Advanta",
+      "period": "January 2019 - August 2021",
+      "current": false,
+      "bullets": [
+        "Built a project metrics dashboard using Angular, Chart.js, and ApexCharts; contributed enhancements to the open-source ng-apexcharts library on GitHub.",
+        "Gained hands-on experience across React, Redux, React Hooks, and Firebase within an agile delivery environment.",
+        "Owned UI development, API integration, test automation, and CI/CD infrastructure - becoming a key contributor across the full delivery stack within a year.",
+        "Designed and maintained a test automation framework using NUnit and SpecFlow, and configured end-to-end pipelines with Jenkins, Urban Code Deploy, and ReportPortal."
+      ],
+      "achievements": [
+        {
+          "count": "1x",
+          "title": "Spot Award",
+          "description": "For delivering a critical business feature from POC to market-ready in record time"
+        }
+      ]
+    },
+    {
+      "title": "Assistant System Engineer",
+      "company": "Tata Consultancy Services",
+      "period": "August 2017 - December 2018",
+      "current": false,
+      "bullets": [
+        "Managed and maintained approximately 3,000 SQL Server instances globally for a leading market research firm, ensuring high availability and operational continuity.",
+        "Handled backup and recovery operations, SQL Server installations (2008-2016), and production environment configuration.",
+        "Built a strong foundation in enterprise data infrastructure that informed future full-stack development work."
+      ],
+      "achievements": [
+        {
+          "count": "2x",
+          "title": "Spot Awards",
+          "description": "For valuable contribution to migration and upgradation of 1,000+ database servers"
+        }
+      ]
+    }
+  ],
+  "driveLink": "https://drive.google.com/file/d/1aCann_XeWxEpj7mK8iEfLSaFy0Pl8I6B/view?usp=sharing"
+}
