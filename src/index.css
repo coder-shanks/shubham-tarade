@@ -53,7 +53,7 @@
      ============================================================ */
   /* tweakcn "claude" theme – https://tweakcn.com/themes/cmlm09qdq000004l7a6e9681h */
   :root {
-    --background: oklch(0.9818 0.0054 95.0986);
+    --background: oklch(0.955 0.0054 95.0986);
     --foreground: oklch(0.3438 0.0269 95.7226);
     --card: oklch(0.9818 0.0054 95.0986);
     --card-foreground: oklch(0.1908 0.0020 106.5859);

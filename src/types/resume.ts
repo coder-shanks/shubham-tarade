@@ -32,6 +32,12 @@ export interface AchievementItem {
   description: string
 }
 
+export interface SocialLinks {
+  linkedin?: string
+  github?: string
+  blog?: string
+}
+
 export interface ResumeData {
   profile: Profile
   contact: Contact
@@ -40,4 +46,5 @@ export interface ResumeData {
   skills: SkillCategory[]
   experience: ExperienceItem[]
   driveLink: string
+  socials?: SocialLinks
 }

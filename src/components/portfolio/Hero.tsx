@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react"
 import { motion } from "motion/react"
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaExternalLinkAlt, FaLinkedin, FaGithub, FaGlobe } from "react-icons/fa";
 import { Button } from "@/components/ui/button"
 import { useTypewriter } from "@/hooks/useTypewriter"
 import { resume } from "@/lib/resume"
@@ -88,9 +88,9 @@ export function Hero() {
 
         {/* Body */}
         <div className="relative p-8 sm:p-12 font-mono space-y-5 min-h-80">
-          {/* Dark mode scanline overlay */}
-          <div className="dark:absolute dark:inset-0 dark:pointer-events-none dark:z-20 dark:rounded-none dark:bg-repeat opacity-0 dark:opacity-100" style={{
-            backgroundImage: "repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0, 0, 0, 0.04) 2px, rgba(0, 0, 0, 0.04) 4px)"
+          {/* Scanline overlay */}
+          <div className="absolute inset-0 h-full pointer-events-none z-20 bg-repeat" style={{
+            backgroundImage: "repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0, 0, 0, 0.03) 2px, rgba(0, 0, 0, 0.03) 4px)"
           }} />
           {/* Boot sequence lines - animated with framer motion */}
           <motion.div
@@ -153,6 +153,45 @@ export function Hero() {
                     />
                   )}
                 </div>
+              </div>
+
+              <div className="flex gap-2 pt-3">
+                {resume.socials?.linkedin && (
+                  <Button
+                    asChild
+                    variant="outline"
+                    size="icon"
+                    className="border-primary/50 hover:border-primary hover:text-primary transition-all"
+                  >
+                    <a href={resume.socials.linkedin} target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                      <FaLinkedin className="w-5 h-5" />
+                    </a>
+                  </Button>
+                )}
+                {resume.socials?.github && (
+                  <Button
+                    asChild
+                    variant="outline"
+                    size="icon"
+                    className="border-primary/50 hover:border-primary hover:text-primary transition-all"
+                  >
+                    <a href={resume.socials.github} target="_blank" rel="noopener noreferrer" title="GitHub">
+                      <FaGithub className="w-5 h-5" />
+                    </a>
+                  </Button>
+                )}
+                {resume.socials?.blog && (
+                  <Button
+                    asChild
+                    variant="outline"
+                    size="icon"
+                    className="border-primary/50 hover:border-primary hover:text-primary transition-all"
+                  >
+                    <a href={resume.socials.blog} target="_blank" rel="noopener noreferrer" title="Blog">
+                      <FaGlobe className="w-5 h-5" />
+                    </a>
+                  </Button>
+                )}
               </div>
 
               <div className="flex flex-wrap gap-3 pt-1">

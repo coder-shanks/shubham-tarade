@@ -6,6 +6,11 @@
   "contact": {
     "email": "sgstarade@gmail.com"
   },
+  "social": {
+    "linkedin": "https://www.linkedin.com/in/shubham-tarade",
+    "github": "https://github.com/coder-shanks",
+    "blog": "https://fullyunderstood.com/"
+  },
   "summary": [
     "8+ years across the full stack — database infrastructure, test automation and enterprise frontend engineering.",
     "Self-driven career pivot: from systems-level work to leading frontend architecture at scale, through deliberate upskilling.",
