@@ -87,7 +87,7 @@ export function Hero() {
         </div>
 
         {/* Body */}
-        <div className="relative p-8 sm:p-12 font-mono space-y-5 min-h-80">
+        <div className="relative p-8 sm:p-12 font-mono space-y-5 min-h-80 bg-card">
           {/* Scanline overlay */}
           <div className="absolute inset-0 h-full pointer-events-none z-20 bg-repeat" style={{
             backgroundImage: "repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0, 0, 0, 0.03) 2px, rgba(0, 0, 0, 0.03) 4px)"
