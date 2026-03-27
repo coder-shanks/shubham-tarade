@@ -4,8 +4,11 @@ import { Summary } from "@/components/portfolio/Summary"
 import { Skills } from "@/components/portfolio/Skills"
 import { Experience } from "@/components/portfolio/Experience"
 import { ScrollToTop } from "@/components/portfolio/ScrollToTop"
+import { useScrollToHash } from "@/hooks/useScrollToHash"
 
 export function App() {
+  useScrollToHash()
+
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       <div>
