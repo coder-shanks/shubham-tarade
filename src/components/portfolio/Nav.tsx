@@ -3,6 +3,7 @@ import { useTheme } from "@/components/theme-provider"
 import { Button } from "@/components/ui/button"
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip"
 import strawhatLogo from "@/assets/strawhat.png"
+import { Moon, Sun } from "lucide-react"
 
 const SECTIONS = [
   { id: "hero", label: "~" },
@@ -79,7 +80,7 @@ export function Nav() {
               onClick={toggleTheme}
               className="shrink-0 font-mono text-sm gap-1.5 text-muted-foreground hover:text-foreground"
             >
-              {theme === "dark" ? "☀" : "⏾"}
+              {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
               <span className="hidden sm:inline text-sm">{theme === "dark" ? "light" : "dark"}</span>
             </Button>
           </TooltipTrigger>
